@@ -1,0 +1,122 @@
+# vsim -c top 
+# Start time: 23:21:10 on Oct 27,2021
+# Loading sv_std.std
+# Loading work.top
+# Loading work.mooreFSM
+# Loading work.mealyFSM
+# 
+# Resetting FSM.
+#                  150 Trace: 0000	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                  350 Trace: 0000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                  550 Trace: 0000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                  750 Trace: 0000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                  950 Trace: 0000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+# 
+# Resetting FSM.
+#                 1150 Trace: 0001	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 1350 Trace: 0001	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 1550 Trace: 0001	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 1750 Trace: 0001	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 1950 Trace: 0001	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 2150 Trace: 0010	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 2350 Trace: 0010	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 2550 Trace: 0010	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 2750 Trace: 0010	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 2950 Trace: 0010	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 3150 Trace: 0011	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 3350 Trace: 0011	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 3550 Trace: 0011	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 3750 Trace: 0011	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 3950 Trace: 0011	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 4150 Trace: 0100	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 4350 Trace: 0100	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 4550 Trace: 0100	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 4750 Trace: 0100	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 4950 Trace: 0100	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 5150 Trace: 0101	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 5350 Trace: 0101	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 5550 Trace: 0101	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 5750 Trace: 0101	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+#                 5950 Trace: 0101	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+# 
+# Resetting FSM.
+#                 6150 Trace: 0110	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 6350 Trace: 0110	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 6550 Trace: 0110	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 6750 Trace: 0110	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 6950 Trace: 0110	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 7150 Trace: 0111	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 7350 Trace: 0111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 7550 Trace: 0111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 7750 Trace: 0111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 7950 Trace: 0111	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+# 
+# Resetting FSM.
+#                 8150 Trace: 1000	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 8350 Trace: 1000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 8550 Trace: 1000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 8750 Trace: 1000	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                 8950 Trace: 1000	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+# 
+# Resetting FSM.
+#                 9150 Trace: 1001	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                 9350 Trace: 1001	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                 9550 Trace: 1001	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 9750 Trace: 1001	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                 9950 Trace: 1001	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+# 
+# Resetting FSM.
+#                10150 Trace: 1010	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                10350 Trace: 1010	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                10550 Trace: 1010	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                10750 Trace: 1010	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                10950 Trace: 1010	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+# 
+# Resetting FSM.
+#                11150 Trace: 1011	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                11350 Trace: 1011	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                11550 Trace: 1011	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                11750 Trace: 1011	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                11950 Trace: 1011	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+# 
+# Resetting FSM.
+#                12150 Trace: 1100	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                12350 Trace: 1100	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                12550 Trace: 1100	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                12750 Trace: 1100	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                12950 Trace: 1100	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+# 
+# Resetting FSM.
+#                13150 Trace: 1101	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                13350 Trace: 1101	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                13550 Trace: 1101	Input: 0	Moore State: S2	Moore Output:1100	Mealy State: S2	Mealy Output: 1100
+#                13750 Trace: 1101	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+#                13950 Trace: 1101	Input: 1	Moore State: S3	Moore Output:1111	Mealy State: S3	Mealy Output: 1111
+# 
+# Resetting FSM.
+#                14150 Trace: 1110	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                14350 Trace: 1110	Input: 0	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: 0000
+#                14550 Trace: 1110	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                14750 Trace: 1110	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                14950 Trace: 1110	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+# 
+# Resetting FSM.
+#                15150 Trace: 1111	Input: x	Moore State: S0	Moore Output:0000	Mealy State: S0	Mealy Output: xxxx
+#                15350 Trace: 1111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                15550 Trace: 1111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                15750 Trace: 1111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+#                15950 Trace: 1111	Input: 1	Moore State: S1	Moore Output:1001	Mealy State: S1	Mealy Output: 1001
+# ** Note: $finish    : problem1.sv(156)
+#    Time: 15950 ps  Iteration: 1  Instance: /top
+# End time: 23:21:10 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
