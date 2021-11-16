@@ -11,37 +11,37 @@ cModel Technology
 Z0 dC:/Users/Chuck/Insync/kpfaber@gmail.com/Google Drive/Portland State University/Fall 2021/ECE 581 - ASIC Modeling and Synthesis/ece581/proj2
 vbubbleSort
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1636344187
+!s110 1636344187
 !i10b 1
 !s100 mIfH7nCeoi[h<><07]cGZ1
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Iko`Rd:b?D8hTIh6@]L:N;1
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1636344182
-Z6 8prob3.sv
-Z7 Fprob3.sv
+w1636344182
+8prob3.sv
+Fprob3.sv
 !i122 59
 L0 3 49
-Z8 OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1636344187.000000
+!s108 1636344187.000000
 !s107 prob3.sv|
-Z10 !s90 prob3.sv|
+!s90 prob3.sv|
 !i113 1
-Z11 tCvgOpt 0
+Z5 tCvgOpt 0
 nbubble@sort
 vFIFO
 R1
 !s110 1636254608
 !i10b 1
 !s100 moVd;E:NPPV9VjXAl?Nj;3
-R3
+R2
 I?FcjfLa@ai5_E<TIRXko=2
-R4
+R3
 S1
 R0
 w1636254604
@@ -49,7 +49,7 @@ w1636254604
 Fprob4.sv
 !i122 41
 L0 13 58
-R8
+R4
 r1
 !s85 0
 31
@@ -57,104 +57,129 @@ r1
 !s107 prob4.sv|
 !s90 prob4.sv|
 !i113 1
-R11
+R5
 n@f@i@f@o
 vS1
 R1
-Z12 !s110 1636261009
+Z6 !s110 1636261009
 !i10b 1
 !s100 n[P3dbJdTYjM@dYM2Rb?X0
-R3
+R2
 IWn:zAQNF8]j9>i7Ug4PKS0
-R4
+R3
 S1
 R0
-Z13 w1636261006
-Z14 8prob1.sv
-Z15 Fprob1.sv
+Z7 w1636261006
+Z8 8prob1.sv
+Z9 Fprob1.sv
 !i122 45
 L0 3 26
-R8
+R4
 r1
 !s85 0
 31
-Z16 !s108 1636261009.000000
-Z17 !s107 prob1.sv|
-Z18 !s90 prob1.sv|
+Z10 !s108 1636261009.000000
+Z11 !s107 prob1.sv|
+Z12 !s90 prob1.sv|
 !i113 1
-R11
+R5
 n@s1
 vS1_BOOL_FSM
 R1
-R12
+R6
 !i10b 1
 !s100 S4F^DlGHh5NLI;Ac]99>@3
-R3
+R2
 I4Vd9:T[8IOD0CSQIhPg]a1
-R4
+R3
 S1
 R0
-R13
-R14
-R15
+R7
+R8
+R9
 !i122 45
 L0 72 24
-R8
+R4
 r1
 !s85 0
 31
-R16
-R17
-R18
-!i113 1
+R10
 R11
+R12
+!i113 1
+R5
 n@s1_@b@o@o@l_@f@s@m
 vS1_FSM
 R1
-R12
+R6
 !i10b 1
 !s100 X]3=NjOWJ1Lb4SH?_W6hE2
-R3
+R2
 IY51X6klTSJha_8N8dPFF43
-R4
+R3
 S1
 R0
-R13
-R14
-R15
+R7
+R8
+R9
 !i122 45
 L0 30 40
-R8
+R4
 r1
 !s85 0
 31
-R16
-R17
-R18
-!i113 1
+R10
 R11
+R12
+!i113 1
+R5
 n@s1_@f@s@m
-vtop
+vSequence_Detector
 R1
-R2
+Z13 !s110 1636352927
 !i10b 1
-!s100 `JXA?AF3m@?z=5^;b2JP@1
+!s100 eTg7c7982Yl3L`:T=7h3J0
+R2
+I8@Gk0kjEYcO:W31QW:gO61
 R3
-IkCUV:B8Cb_ZEA>h87FXf?0
-R4
 S1
 R0
-R5
-R6
-R7
-!i122 59
-L0 55 73
-R8
+Z14 w1636352922
+Z15 8prob2_tb.sv
+Z16 Fprob2_tb.sv
+!i122 79
+L0 8 65
+R4
 r1
 !s85 0
 31
-R9
-Z19 !s107 prob3.sv|
-R10
+Z17 !s108 1636352927.000000
+!s107 prob2_tb.sv|
+Z18 !s90 prob2_tb.sv|
 !i113 1
-R11
+R5
+n@sequence_@detector
+vtop
+R1
+R13
+!i10b 1
+!s100 J?FT9iE2mafaaR>Z8jgTD2
+R2
+IUUJeSC2CeNMVI@JKO9dWH0
+R3
+S1
+R0
+R14
+R15
+R16
+!i122 79
+L0 74 55
+R4
+r1
+!s85 0
+31
+R17
+Z19 !s107 prob2_tb.sv|
+R18
+!i113 1
+R5

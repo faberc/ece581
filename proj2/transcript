@@ -1,45 +1,100 @@
 # vsim -c top 
-# Start time: 20:03:09 on Nov 07,2021
+# Start time: 22:28:50 on Nov 07,2021
 # Loading sv_std.std
 # Loading work.top
-# Loading work.bubbleSort
-# Testing Writing to RAM.
-# Testing Reading from RAM
-# Read 0 from location 0.
-# Read 1 from location 1.
-# Read 2 from location 2.
-# Read 3 from location 3.
-# Read 4 from location 4.
-# Read 5 from location 5.
-# Read 6 from location 6.
-# Read 7 from location 7.
+# Loading work.Sequence_Detector
+# 500	s_in:0	d_out:0	Unmatched
+# 600	s_in:1	d_out:0	Unmatched
+# 700	s_in:1	d_out:0	Unmatched
+# 800	s_in:0	d_out:0	Unmatched
+# 900	s_in:0	d_out:0	Unmatched
+# 1000	s_in:0	d_out:0	Unmatched
+# 1100	s_in:0	d_out:0	Unmatched
+# 1200	s_in:0	d_out:1	Matched
 # 
 # 
-# 
-# Writing random values to RAM
-# Writing 7 to location 0.
-# Writing 8 to location 1.
-# Writing 4 to location 2.
-# Writing 0 to location 3.
-# Writing 0 to location 4.
-# Writing 9 to location 5.
-# Writing 6 to location 6.
-# Writing 0 to location 7.
-# 
-# 
-# Sorting.
-# 
-# 
-# Reading Sorted Values from RAM
-# Read 0 from location 0.
-# Read 0 from location 1.
-# Read 0 from location 2.
-# Read 4 from location 3.
-# Read 6 from location 4.
-# Read 7 from location 5.
-# Read 8 from location 6.
-# Read 9 from location 7.
-# ** Note: $finish    : prob3.sv(124)
-#    Time: 9500 ps  Iteration: 1  Instance: /top
-# End time: 20:03:11 on Nov 07,2021, Elapsed time: 0:00:02
+# Testing with stream of bits 1101000000010001001001100101100011010110000001100011000010011000000100100100
+# 1700	s_in:0	d_out:0	Unmatched
+# 1800	s_in:0	d_out:0	Unmatched
+# 1900	s_in:0	d_out:0	Unmatched
+# 2000	s_in:0	d_out:0	Unmatched
+# 2100	s_in:1	d_out:0	Unmatched
+# 2200	s_in:1	d_out:0	Unmatched
+# 2300	s_in:0	d_out:0	Unmatched
+# 2400	s_in:1	d_out:0	Unmatched
+# 2500	s_in:0	d_out:0	Unmatched
+# 2600	s_in:0	d_out:0	Unmatched
+# 2700	s_in:0	d_out:0	Unmatched
+# 2800	s_in:0	d_out:0	Unmatched
+# 2900	s_in:0	d_out:0	Unmatched
+# 3000	s_in:0	d_out:0	Unmatched
+# 3100	s_in:0	d_out:0	Unmatched
+# 3200	s_in:1	d_out:0	Unmatched
+# 3300	s_in:0	d_out:0	Unmatched
+# 3400	s_in:0	d_out:0	Unmatched
+# 3500	s_in:0	d_out:0	Unmatched
+# 3600	s_in:1	d_out:0	Unmatched
+# 3700	s_in:0	d_out:0	Unmatched
+# 3800	s_in:0	d_out:0	Unmatched
+# 3900	s_in:1	d_out:0	Unmatched
+# 4000	s_in:0	d_out:0	Unmatched
+# 4100	s_in:0	d_out:0	Unmatched
+# 4200	s_in:1	d_out:0	Unmatched
+# 4300	s_in:1	d_out:0	Unmatched
+# 4400	s_in:0	d_out:0	Unmatched
+# 4500	s_in:0	d_out:0	Unmatched
+# 4600	s_in:1	d_out:0	Unmatched
+# 4700	s_in:0	d_out:0	Unmatched
+# 4800	s_in:1	d_out:0	Unmatched
+# 4900	s_in:1	d_out:0	Unmatched
+# 5000	s_in:0	d_out:0	Unmatched
+# 5100	s_in:0	d_out:0	Unmatched
+# 5200	s_in:0	d_out:0	Unmatched
+# 5300	s_in:1	d_out:0	Unmatched
+# 5400	s_in:1	d_out:0	Unmatched
+# 5500	s_in:0	d_out:0	Unmatched
+# 5600	s_in:1	d_out:0	Unmatched
+# 5700	s_in:0	d_out:0	Unmatched
+# 5800	s_in:1	d_out:0	Unmatched
+# 5900	s_in:1	d_out:0	Unmatched
+# 6000	s_in:0	d_out:0	Unmatched
+# 6100	s_in:0	d_out:0	Unmatched
+# 6200	s_in:0	d_out:0	Unmatched
+# 6300	s_in:0	d_out:0	Unmatched
+# 6400	s_in:0	d_out:1	Matched
+# 6500	s_in:0	d_out:0	Unmatched
+# 6600	s_in:1	d_out:0	Unmatched
+# 6700	s_in:1	d_out:0	Unmatched
+# 6800	s_in:0	d_out:0	Unmatched
+# 6900	s_in:0	d_out:0	Unmatched
+# 7000	s_in:0	d_out:0	Unmatched
+# 7100	s_in:1	d_out:0	Unmatched
+# 7200	s_in:1	d_out:0	Unmatched
+# 7300	s_in:0	d_out:0	Unmatched
+# 7400	s_in:0	d_out:0	Unmatched
+# 7500	s_in:0	d_out:0	Unmatched
+# 7600	s_in:0	d_out:0	Unmatched
+# 7700	s_in:1	d_out:0	Unmatched
+# 7800	s_in:0	d_out:0	Unmatched
+# 7900	s_in:0	d_out:0	Unmatched
+# 8000	s_in:1	d_out:0	Unmatched
+# 8100	s_in:1	d_out:0	Unmatched
+# 8200	s_in:0	d_out:0	Unmatched
+# 8300	s_in:0	d_out:0	Unmatched
+# 8400	s_in:0	d_out:0	Unmatched
+# 8500	s_in:0	d_out:0	Unmatched
+# 8600	s_in:0	d_out:1	Matched
+# 8700	s_in:0	d_out:0	Unmatched
+# 8800	s_in:1	d_out:0	Unmatched
+# 8900	s_in:0	d_out:0	Unmatched
+# 9000	s_in:0	d_out:0	Unmatched
+# 9100	s_in:1	d_out:0	Unmatched
+# 9200	s_in:0	d_out:0	Unmatched
+# 9300	s_in:0	d_out:0	Unmatched
+# 9400	s_in:1	d_out:0	Unmatched
+# 9500	s_in:0	d_out:0	Unmatched
+# 9600	s_in:0	d_out:0	Unmatched
+# ** Note: $finish    : prob2_tb.sv(126)
+#    Time: 9600 ps  Iteration: 1  Instance: /top
+# End time: 22:28:51 on Nov 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
