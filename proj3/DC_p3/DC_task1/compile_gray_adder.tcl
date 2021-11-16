@@ -1,7 +1,7 @@
 # Fill with your directory path and library 
-lappend search_path "your file directory path"
-set target_library "target library"
-set link_library "link Library"
+lappend search_path "/u/cfaber/Documents/ECE581/ece581/proj3/DC_p3/DC_task1"
+set target_library "osu05_stdcells.db"
+set link_library "osu05_stdcells.db"
 
 
 link
