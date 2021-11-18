@@ -1,0 +1,308 @@
+Error: Current design is not defined. (UID-4)
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Loading sverilog file '/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv
+Warning:  /home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv:96: Using default enum base size of 32. (VER-533)
+
+Statistics for case statements in always block at line 14 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            15            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 27 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            28            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_A line 9 in file
+		'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cs_reg        | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 63 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            64            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 76 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            77            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_B line 58 in file
+		'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cs_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       cs_reg        | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 113 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           114            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 126 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           127            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine FSM_C line 108 in file
+		'/home/cfaber/common/Documents/ECE581/ece581/proj3/prob2.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cs_reg        | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       cs_reg        | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/cfaber/common/Documents/ECE581/ece581/proj3/FSM_A.db:FSM_A'
+Loaded 3 designs.
+Current design is 'FSM_A'.
+Current design is 'FSM_A'.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.3 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FSM_A'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'FSM_A' has no optimization constraints set. (OPT-108)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'FSM_A'
+  Mapping 'FSM_A'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+    0:00:22    8550.0      0.00       0.0       0.0                          
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+ 
+****************************************
+Report : area
+Design : FSM_A
+Version: Q-2019.12-SP3
+Date   : Thu Nov 18 14:29:09 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    osu05_stdcells (File: /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db)
+
+Number of ports:                            4
+Number of nets:                            25
+Number of cells:                           22
+Number of combinational cells:             16
+Number of sequential cells:                 3
+Number of macros/black boxes:               0
+Number of buf/inv:                          5
+Number of references:                       7
+
+Combinational area:               3798.000000
+Buf/Inv area:                      720.000000
+Noncombinational area:            4752.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  8550.000000
+Total area:                 undefined
+ 
+****************************************
+Report : cell
+Design : FSM_A
+Version: Q-2019.12-SP3
+Date   : Thu Nov 18 14:29:09 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U23                       INVX1           osu05_stdcells  144.000000
+U24                       OAI21X1         osu05_stdcells  207.000000
+U25                       MUX2X1          osu05_stdcells  432.000000
+U26                       NOR2X1          osu05_stdcells  216.000000
+U27                       NAND2X1         osu05_stdcells  216.000000
+U28                       MUX2X1          osu05_stdcells  432.000000
+U29                       NOR2X1          osu05_stdcells  216.000000
+U30                       OAI21X1         osu05_stdcells  207.000000
+U31                       MUX2X1          osu05_stdcells  432.000000
+U32                       AOI21X1         osu05_stdcells  288.000000
+U33                       INVX1           osu05_stdcells  144.000000
+U34                       NAND2X1         osu05_stdcells  216.000000
+U35                       INVX1           osu05_stdcells  144.000000
+U36                       INVX1           osu05_stdcells  144.000000
+U37                       INVX1           osu05_stdcells  144.000000
+U38                       NAND2X1         osu05_stdcells  216.000000
+cs_reg[0]                 DFFSR           osu05_stdcells  1584.000000
+                                                                    n
+cs_reg[1]                 DFFSR           osu05_stdcells  1584.000000
+                                                                    n
+cs_reg[2]                 DFFSR           osu05_stdcells  1584.000000
+                                                                    n
+--------------------------------------------------------------------------------
+Total 19 cells                                            8550.000000
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : FSM_A
+Version: Q-2019.12-SP3
+Date   : Thu Nov 18 14:29:09 2021
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.1145 mW   (67%)
+  Net Switching Power  = 561.4258 uW   (33%)
+                         ---------
+Total Dynamic Power    =   1.6759 mW  (100%)
+
+Cell Leakage Power     =   2.6239 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.7072        6.6570e-02            1.5989            0.7738  (  46.17%)
+combinational      0.4072            0.4949            1.0250            0.9021  (  53.83%)
+--------------------------------------------------------------------------------------------------
+Total              1.1145 mW         0.5614 mW         2.6239 nW         1.6759 mW
+Writing verilog file '/home/cfaber/common/Documents/ECE581/ece581/proj3/FSM_A.netlist'.
+
+  Linking design 'FSM_A'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  osu05_stdcells (library)    /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db
+
+1

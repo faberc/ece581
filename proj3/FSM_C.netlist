@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : Q-2019.12-SP3
+// Date      : Thu Nov 18 14:29:40 2021
+/////////////////////////////////////////////////////////////
+
+
+module FSM_C ( in, rst, clk, out );
+  input in, rst, clk;
+  output out;
+  wire   n7, n16, n17, n18, n19, n20, n21, n22;
+  wire   [6:0] cs;
+  wire   [6:0] ns;
+
+  DFFSR \cs_reg[0]  ( .D(ns[0]), .CLK(clk), .R(1'b1), .S(n7), .Q(cs[0]) );
+  DFFSR \cs_reg[3]  ( .D(ns[3]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[3]) );
+  DFFSR \cs_reg[1]  ( .D(ns[1]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[1]) );
+  DFFSR \cs_reg[2]  ( .D(ns[2]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[2]) );
+  DFFSR \cs_reg[5]  ( .D(ns[5]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[5]) );
+  DFFSR \cs_reg[4]  ( .D(ns[4]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[4]) );
+  DFFSR \cs_reg[6]  ( .D(ns[6]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[6]) );
+  NAND2X1 U26 ( .A(n16), .B(n17), .Y(out) );
+  MUX2X1 U27 ( .B(n17), .A(n18), .S(n19), .Y(ns[6]) );
+  NOR2X1 U28 ( .A(n16), .B(n19), .Y(ns[5]) );
+  NOR2X1 U29 ( .A(cs[3]), .B(cs[1]), .Y(n16) );
+  MUX2X1 U30 ( .B(n18), .A(n17), .S(n19), .Y(ns[4]) );
+  INVX1 U31 ( .A(cs[5]), .Y(n17) );
+  INVX1 U32 ( .A(cs[2]), .Y(n18) );
+  AOI21X1 U33 ( .A(n20), .B(n21), .C(in), .Y(ns[3]) );
+  INVX1 U34 ( .A(cs[0]), .Y(n21) );
+  INVX1 U35 ( .A(n22), .Y(ns[2]) );
+  MUX2X1 U36 ( .B(cs[0]), .A(cs[1]), .S(n19), .Y(n22) );
+  AND2X1 U37 ( .A(n19), .B(cs[3]), .Y(ns[1]) );
+  NOR2X1 U38 ( .A(n20), .B(n19), .Y(ns[0]) );
+  INVX1 U39 ( .A(in), .Y(n19) );
+  NOR2X1 U40 ( .A(cs[4]), .B(cs[6]), .Y(n20) );
+  INVX1 U41 ( .A(rst), .Y(n7) );
+endmodule
+
