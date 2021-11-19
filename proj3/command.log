@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version Q-2019.12-SP3 for linux64 -- Apr 21, 2020
-#@ # Date:   Thu Nov 18 14:28:48 2021
+#@ # Date:   Thu Nov 18 18:14:02 2021
 #@ # Run by: cfaber@auto.ece.pdx.edu
 #@ 
 
@@ -6678,8 +6678,8 @@ source /pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/admin/setup/.synops
 
 #@ # -- End source /pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/admin/setup/.synopsys_dc.setup
 
-source compile_p2_a.tcl > prob2_rpt/rptA.txt
-#@ # -- Starting source compile_p2_a.tcl
+source compile_p4.tcl
+#@ # -- Starting source compile_p4.tcl
 
 #@ # Fill with your directory path and library 
 #@ lappend search_path "/u/cfaber/Documents/ECE581/ece581/proj3/"
@@ -6689,18 +6689,18 @@ source compile_p2_a.tcl > prob2_rpt/rptA.txt
 #@ 
 #@ link
 #@ 
-#@ read_file -format sverilog prob2.sv
-#@ current_design FSM_A
+#@ read_file -format sverilog prob4.sv
+#@ current_design S1_FSM
 #@ compile
 #@ report_area
 #@ report_cell
 #@ report_power
-#@ write -format Verilog -hierarchy -output FSM_A.netlist
+#@ write -format Verilog -hierarchy -output S1_FSM.netlist
 #@ link
-#@ # -- End source compile_p2_a.tcl
+#@ # -- End source compile_p4.tcl
 
-source compile_p2_b.tcl > prob2_rpt/rptB.txt
-#@ # -- Starting source compile_p2_b.tcl
+source compile_p4.tcl
+#@ # -- Starting source compile_p4.tcl
 
 #@ # Fill with your directory path and library 
 #@ lappend search_path "/u/cfaber/Documents/ECE581/ece581/proj3/"
@@ -6710,19 +6710,18 @@ source compile_p2_b.tcl > prob2_rpt/rptB.txt
 #@ 
 #@ link
 #@ 
-#@ read_file -format sverilog prob2.sv
-#@ current_design FSM_B
+#@ read_file -format sverilog prob4.sv
+#@ current_design S1_FSM
 #@ compile
 #@ report_area
 #@ report_cell
 #@ report_power
-#@ write -format Verilog -hierarchy -output FSM_B.netlist
+#@ write -format Verilog -hierarchy -output S1_FSM.netlist
 #@ link
-#@ # -- End source compile_p2_b.tcl
+#@ # -- End source compile_p4.tcl
 
-source compile_p2_c.tcl > pprob2_rpt/rptC.txt
-source compile_p2_c.tcl > prob2_rpt/rptC.txt
-#@ # -- Starting source compile_p2_c.tcl
+source compile_p4.tcl
+#@ # -- Starting source compile_p4.tcl
 
 #@ # Fill with your directory path and library 
 #@ lappend search_path "/u/cfaber/Documents/ECE581/ece581/proj3/"
@@ -6732,14 +6731,35 @@ source compile_p2_c.tcl > prob2_rpt/rptC.txt
 #@ 
 #@ link
 #@ 
-#@ read_file -format sverilog prob2.sv
-#@ current_design FSM_C
+#@ read_file -format sverilog prob4.sv
+#@ current_design S1_FSM
 #@ compile
 #@ report_area
 #@ report_cell
 #@ report_power
-#@ write -format Verilog -hierarchy -output FSM_C.netlist
+#@ write -format Verilog -hierarchy -output S1_FSM.netlist
 #@ link
-#@ # -- End source compile_p2_c.tcl
+#@ # -- End source compile_p4.tcl
+
+source compile_p4.tcl
+#@ # -- Starting source compile_p4.tcl
+
+#@ # Fill with your directory path and library 
+#@ lappend search_path "/u/cfaber/Documents/ECE581/ece581/proj3/"
+#@ set target_library "osu05_stdcells.db"
+#@ set link_library "osu05_stdcells.db"
+#@ 
+#@ 
+#@ link
+#@ 
+#@ read_file -format sverilog prob4.sv
+#@ current_design S1_FSM
+#@ compile
+#@ report_area
+#@ report_cell
+#@ report_power
+#@ write -format Verilog -hierarchy -output S1_FSM.netlist
+#@ link
+#@ # -- End source compile_p4.tcl
 
 quit
