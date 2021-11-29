@@ -1,0 +1,90 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : Q-2019.12-SP3
+// Date      : Sun Nov 28 19:40:04 2021
+/////////////////////////////////////////////////////////////
+
+
+module gray2bin_N4_0 ( bin, gray );
+  output [3:0] bin;
+  input [3:0] gray;
+  wire   \gray[3] ;
+  assign bin[3] = \gray[3] ;
+  assign \gray[3]  = gray[3];
+
+  XOR2X1 U1 ( .A(gray[0]), .B(bin[1]), .Y(bin[0]) );
+  XOR2X1 U2 ( .A(bin[2]), .B(gray[1]), .Y(bin[1]) );
+  XOR2X1 U3 ( .A(gray[2]), .B(\gray[3] ), .Y(bin[2]) );
+endmodule
+
+
+module CLA_adder_nBITS4 ( sum, co, ain, bin, cin );
+  output [3:0] sum;
+  input [3:0] ain;
+  input [3:0] bin;
+  input cin;
+  output co;
+  wire   n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11;
+
+  XOR2X1 U1 ( .A(n1), .B(n2), .Y(sum[3]) );
+  XOR2X1 U2 ( .A(n3), .B(n4), .Y(sum[2]) );
+  XOR2X1 U3 ( .A(n5), .B(n6), .Y(sum[1]) );
+  XOR2X1 U4 ( .A(cin), .B(n7), .Y(sum[0]) );
+  OAI22X1 U5 ( .A(n8), .B(n9), .C(n2), .D(n1), .Y(co) );
+  XOR2X1 U6 ( .A(n9), .B(bin[3]), .Y(n1) );
+  AOI22X1 U7 ( .A(bin[2]), .B(ain[2]), .C(n3), .D(n4), .Y(n2) );
+  XOR2X1 U8 ( .A(ain[2]), .B(bin[2]), .Y(n4) );
+  INVX1 U9 ( .A(n10), .Y(n3) );
+  AOI22X1 U10 ( .A(bin[1]), .B(ain[1]), .C(n6), .D(n5), .Y(n10) );
+  XOR2X1 U11 ( .A(ain[1]), .B(bin[1]), .Y(n5) );
+  INVX1 U12 ( .A(n11), .Y(n6) );
+  AOI22X1 U13 ( .A(n7), .B(cin), .C(ain[0]), .D(bin[0]), .Y(n11) );
+  XOR2X1 U14 ( .A(ain[0]), .B(bin[0]), .Y(n7) );
+  INVX1 U15 ( .A(ain[3]), .Y(n9) );
+  INVX1 U16 ( .A(bin[3]), .Y(n8) );
+endmodule
+
+
+module bin2gray_N5 ( gray, bin );
+  output [4:0] gray;
+  input [4:0] bin;
+  wire   \bin[4] ;
+  assign gray[4] = \bin[4] ;
+  assign \bin[4]  = bin[4];
+
+  XOR2X1 U1 ( .A(\bin[4] ), .B(bin[3]), .Y(gray[3]) );
+  XOR2X1 U2 ( .A(bin[3]), .B(bin[2]), .Y(gray[2]) );
+  XOR2X1 U3 ( .A(bin[2]), .B(bin[1]), .Y(gray[1]) );
+  XOR2X1 U4 ( .A(bin[1]), .B(bin[0]), .Y(gray[0]) );
+endmodule
+
+
+module gray2bin_N4_1 ( bin, gray );
+  output [3:0] bin;
+  input [3:0] gray;
+  wire   \gray[3] ;
+  assign bin[3] = \gray[3] ;
+  assign \gray[3]  = gray[3];
+
+  XOR2X1 U1 ( .A(gray[0]), .B(bin[1]), .Y(bin[0]) );
+  XOR2X1 U2 ( .A(bin[2]), .B(gray[1]), .Y(bin[1]) );
+  XOR2X1 U3 ( .A(gray[2]), .B(\gray[3] ), .Y(bin[2]) );
+endmodule
+
+
+module gray_adder ( result, in_A, in_B );
+  output [4:0] result;
+  input [3:0] in_A;
+  input [3:0] in_B;
+  wire   co;
+  wire   [3:0] A_bin;
+  wire   [3:0] B_bin;
+  wire   [3:0] sum;
+
+  gray2bin_N4_0 g2b_A ( .bin(A_bin), .gray(in_A) );
+  gray2bin_N4_1 g2b_B ( .bin(B_bin), .gray(in_B) );
+  CLA_adder_nBITS4 adder ( .sum(sum), .co(co), .ain(A_bin), .bin(B_bin), .cin(
+        1'b0) );
+  bin2gray_N5 b2g ( .gray(result), .bin({co, sum}) );
+endmodule
+

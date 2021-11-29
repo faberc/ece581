@@ -38,7 +38,7 @@ endmodule
 module CLA_adder #(parameter nBITS = 4) (
     output logic [nBITS-1:0] sum,
     output logic co,
-    input logic [nBITS-1:0] ain, bin,
+    input [nBITS-1:0] ain, bin,
     input cin
 );
     logic [nBITS-1:0] P, G;
@@ -58,20 +58,20 @@ module CLA_adder #(parameter nBITS = 4) (
 endmodule
 
 module gray_adder #(parameter N=4) (
-    output [N:0] result,
-    input [N-1:0] in_A, 
-    input [N-1:0] in_B
+    output logic [N:0] result,
+    input [N-1:0] in_A, in_B
     );
 
-    logic [N-1:0] A_bin;
-    logic [N-1:0] B_bin;
-    logic [N-1:0] sum;
-    logic co;
+    wire [N-1:0] A_bin;
+    wire [N-1:0] B_bin;
+    wire [N-1:0] sum;
+    wire co;
 
     gray2bin #(N) g2b_A (
         .gray(in_A),
         .bin(A_bin)
     );
+
     gray2bin #(N) g2b_B (
         .gray(in_B),
         .bin(B_bin)
@@ -86,7 +86,7 @@ module gray_adder #(parameter N=4) (
     );
 
     bin2gray #(N+1) b2g (
-        .bin({sum,co}),
+        .bin({co, sum}),
         .gray(result)
     );
 

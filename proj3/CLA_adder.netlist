@@ -1,0 +1,33 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : Q-2019.12-SP3
+// Date      : Sun Nov 28 19:11:26 2021
+/////////////////////////////////////////////////////////////
+
+
+module CLA_adder ( sum, co, ain, bin, cin );
+  output [3:0] sum;
+  input [3:0] ain;
+  input [3:0] bin;
+  input cin;
+  output co;
+  wire   n12, n13, n14, n15, n16, n17, n18, n19, n20, n21, n22;
+
+  XOR2X1 U17 ( .A(n12), .B(n13), .Y(sum[3]) );
+  XOR2X1 U18 ( .A(n14), .B(n15), .Y(sum[2]) );
+  XOR2X1 U19 ( .A(n16), .B(n17), .Y(sum[1]) );
+  XOR2X1 U20 ( .A(cin), .B(n18), .Y(sum[0]) );
+  OAI22X1 U21 ( .A(n19), .B(n20), .C(n13), .D(n12), .Y(co) );
+  XOR2X1 U22 ( .A(n20), .B(bin[3]), .Y(n12) );
+  AOI22X1 U23 ( .A(bin[2]), .B(ain[2]), .C(n14), .D(n15), .Y(n13) );
+  XOR2X1 U24 ( .A(ain[2]), .B(bin[2]), .Y(n15) );
+  INVX1 U25 ( .A(n21), .Y(n14) );
+  AOI22X1 U26 ( .A(bin[1]), .B(ain[1]), .C(n17), .D(n16), .Y(n21) );
+  XOR2X1 U27 ( .A(ain[1]), .B(bin[1]), .Y(n16) );
+  INVX1 U28 ( .A(n22), .Y(n17) );
+  AOI22X1 U29 ( .A(n18), .B(cin), .C(ain[0]), .D(bin[0]), .Y(n22) );
+  XOR2X1 U30 ( .A(ain[0]), .B(bin[0]), .Y(n18) );
+  INVX1 U31 ( .A(ain[3]), .Y(n20) );
+  INVX1 U32 ( .A(bin[3]), .Y(n19) );
+endmodule
+
