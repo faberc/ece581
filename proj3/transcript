@@ -1,83 +1,29 @@
 # vsim -c top 
-# Start time: 22:02:27 on Nov 18,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# //  Questa Sim-64
-# //  Version 10.6b linux_x86_64 May 25 2017
-# //
-# //  Copyright 1991-2017 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  QuestaSim and its associated documentation contain trade
-# //  secrets and commercial or financial information that are the property of
-# //  Mentor Graphics Corporation and are privileged, confidential,
-# //  and exempt from disclosure under the Freedom of Information Act,
-# //  5 U.S.C. Section 552. Furthermore, this information
-# //  is prohibited from disclosure under the Trade Secrets Act,
-# //  18 U.S.C. Section 1905.
-# //
+# Start time: 12:42:17 on Nov 28,2021
 # Loading sv_std.std
-# Loading work.top(fast)
-# Loading work.S1_FSM(fast)
-# Loading work.DFFSR(fast)
-# Loading work.XOR2X1(fast)
-# Loading work.NAND2X1(fast)
-# Loading work.INVX1(fast)
-# ** Warning: (vsim-3448) osu05_stdcells.v(361): Setting negative specify check constraint (-190 ps) to zero.
-#    Time: 0 ps  Iteration: 0  Instance: /top/s1_0/\cs_reg[0] 
-# Bool FSM Q: 0000  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# Bool FSM Q: 0100  Out: 1
-# Bool FSM Q: 1010  Out: 1
-# Bool FSM Q: 0101  Out: 0
-# Bool FSM Q: 0010  Out: 1
-# Bool FSM Q: 1001  Out: 1
-# ** Note: $finish    : prob4_tb.sv(27)
-#    Time: 5150 ns  Iteration: 1  Instance: /top
-# End time: 22:02:32 on Nov 18,2021, Elapsed time: 0:00:05
-# Errors: 0, Warnings: 2
+# Loading work.top
+# Loading work.gray_adder
+# Loading work.gray2bin
+# Loading work.CLA_adder
+# Loading work.bin2gray
+#                     0 result=xxxxx, in_A=xxxx, in_B=xxxx
+#                     1 result=00000, in_A=0000, in_B=0000
+#                     2 result=00011, in_A=0001, in_B=0000
+#                     3 result=00101, in_A=0010, in_B=0000
+#                     4 result=00110, in_A=0011, in_B=0000
+#                     5 result=00000, in_A=0000, in_B=0000
+#                     6 result=00011, in_A=0000, in_B=0001
+#                     7 result=00101, in_A=0000, in_B=0010
+#                     8 result=00110, in_A=0000, in_B=0011
+#                     9 result=00000, in_A=0000, in_B=0000
+#                    10 result=11000, in_A=0001, in_B=0100
+#                    11 result=00111, in_A=0010, in_B=1000
+#                    12 result=11110, in_A=0011, in_B=1100
+#                    13 result=01001, in_A=0100, in_B=0000
+#                    14 result=00001, in_A=1000, in_B=0001
+#                    15 result=11101, in_A=1100, in_B=0010
+#                    16 result=00010, in_A=1000, in_B=0011
+# ** Note: $finish    : prob3_tb.sv(28)
+#    Time: 26 ns  Iteration: 0  Instance: /top
+# End time: 12:42:20 on Nov 28,2021, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
