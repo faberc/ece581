@@ -1,0 +1,164 @@
+Loading db file '/u/cfaber/Documents/ECE581/ece581/proj3/DC_p3/DC_task1/osu05_stdcells.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Loading verilog file '/home/cfaber/common/Documents/ECE581/ece581/proj3/DC_p3/DC_task2/MY_DESIGN.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/cfaber/common/Documents/ECE581/ece581/proj3/DC_p3/DC_task2/MY_DESIGN.v
+
+Inferred memory devices in process
+	in routine MY_DESIGN line 13 in file
+		'/home/cfaber/common/Documents/ECE581/ece581/proj3/DC_p3/DC_task2/MY_DESIGN.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       R4_reg        | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       R2_reg        | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       R3_reg        | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|       R1_reg        | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Statistics for case statements in always block at line 40 in file
+	'/home/cfaber/common/Documents/ECE581/ece581/proj3/DC_p3/DC_task2/MY_DESIGN.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/cfaber/common/Documents/ECE581/ece581/proj3/DC_p3/DC_task2/MY_DESIGN.db:MY_DESIGN'
+Loaded 3 designs.
+Current design is 'MY_DESIGN'.
+Current design is 'MY_DESIGN'.
+
+  Linking design 'MY_DESIGN'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  osu05_stdcells (library)    /u/cfaber/Documents/ECE581/ece581/proj3/DC_p3/DC_task1/osu05_stdcells.db
+
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP3
+Date:        Sun Dec  5 18:32:37 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ARITH', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'ARITH', cell 'B_3' does not drive any nets. (LINT-1)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+Warning: The following input ports have no clock_relative delay specified, the command set_input_delay without -clock option will be ignored. (TIM-216)
+--------------------
+sel
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 20 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+Cin1[4]
+Cin1[3]
+Cin1[2]
+Cin1[1]
+Cin1[0]
+Cin2[4]
+Cin2[3]
+Cin2[2]
+Cin2[1]
+Cin2[0]
+data1[4]
+data1[3]
+data1[2]
+data1[1]
+data1[0]
+data2[4]
+data2[3]
+data2[2]
+data2[1]
+data2[0]
+ 
+****************************************
+Report : clocks
+Design : MY_DESIGN
+Version: Q-2019.12-SP3
+Date   : Sun Dec  5 18:32:37 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              3.00   {0 1.5}                       {clk}
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MY_DESIGN
+Version: Q-2019.12-SP3
+Date   : Sun Dec  5 18:32:37 2021
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: R3_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out2[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              1.00       1.00
+  R3_reg[0]/clocked_on (**SEQGEN**)        0.00       1.00 r
+  R3_reg[0]/Q (**SEQGEN**)                 0.00       1.00 r
+  C26/Z (GTECH_AND2)                       0.00       1.00 r
+  out2[0] (out)                            0.00       1.00 r
+  data arrival time                                   1.00
+
+  clock clk (rise edge)                    3.00       3.00
+  clock network delay (ideal)              1.00       4.00
+  clock uncertainty                       -0.15       3.85
+  output external delay                   -2.04       1.81
+  data required time                                  1.81
+  -----------------------------------------------------------
+  data required time                                  1.81
+  data arrival time                                  -1.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.81
+
+
+Writing ddc file 'unmapped_design.ddc'.
+
+Memory usage for this session 67 Mbytes.
+Memory usage for this session including child processes 67 Mbytes.
+CPU usage for this session 2 seconds ( 0.00 hours ).
+Elapsed time for this session 11 seconds ( 0.00 hours ).
+
+Thank you...
