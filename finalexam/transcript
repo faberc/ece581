@@ -1,0 +1,60 @@
+# vsim -c top 
+# Start time: 10:58:01 on Dec 06,2021
+# Loading sv_std.std
+# Loading work.top
+# Loading work.S1_BOOL_FSM
+# Bool FSM Q: 111  Out: 0
+# Bool FSM Q: 100  Out: 1
+# Bool FSM Q: 001  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# Bool FSM Q: 010  Out: 0
+# ** Note: $finish    : prob1.sv(50)
+#    Time: 5050 ps  Iteration: 1  Instance: /top
+# End time: 10:58:04 on Dec 06,2021, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

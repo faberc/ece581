@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Chuck/Insync/kpfaber@gmail.com/Google Drive/Portland State University/Fall 2021/ECE 581 - ASIC Modeling and Synthesis/ece581/exam
+vS1_BOOL_FSM
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1638817080
+!i10b 1
+!s100 MN`IU[]mM9F_7Q]jWnWMa0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IAXlm]:5Man?z55D`GH@MI1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1638817076
+Z6 8prob1.sv
+Z7 Fprob1.sv
+!i122 5
+L0 1 25
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1638817080.000000
+!s107 prob1.sv|
+Z10 !s90 prob1.sv|
+!i113 1
+Z11 tCvgOpt 0
+n@s1_@b@o@o@l_@f@s@m
+vtop
+R1
+R2
+!i10b 1
+!s100 =<JbAb9M?kN;zZbbeAJFQ3
+R3
+IjMfhaBEng8lHbgPR8NB2g3
+R4
+S1
+R0
+R5
+R6
+R7
+!i122 5
+L0 28 27
+R8
+r1
+!s85 0
+31
+R9
+Z12 !s107 prob1.sv|
+R10
+!i113 1
+R11
