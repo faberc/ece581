@@ -1,0 +1,23 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : Q-2019.12-SP3
+// Date      : Sun Nov 28 18:26:12 2021
+/////////////////////////////////////////////////////////////
+
+
+module S1_FSM ( clk, rst, out );
+  input clk, rst;
+  output out;
+  wire   \ns[3] , n4, n9;
+  wire   [3:0] cs;
+
+  DFFSR \cs_reg[0]  ( .D(cs[1]), .CLK(clk), .R(n4), .S(1'b1), .Q(cs[0]) );
+  DFFSR \cs_reg[3]  ( .D(\ns[3] ), .CLK(clk), .R(n4), .S(1'b1), .Q(cs[3]) );
+  DFFSR \cs_reg[2]  ( .D(cs[3]), .CLK(clk), .R(n4), .S(1'b1), .Q(cs[2]) );
+  DFFSR \cs_reg[1]  ( .D(cs[2]), .CLK(clk), .R(n4), .S(1'b1), .Q(cs[1]) );
+  XOR2X1 U13 ( .A(out), .B(cs[3]), .Y(\ns[3] ) );
+  NAND2X1 U14 ( .A(cs[2]), .B(n9), .Y(out) );
+  XOR2X1 U15 ( .A(cs[1]), .B(cs[0]), .Y(n9) );
+  INVX1 U16 ( .A(rst), .Y(n4) );
+endmodule
+

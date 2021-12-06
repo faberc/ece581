@@ -1,0 +1,239 @@
+Error: Current design is not defined. (UID-4)
+Running PRESTO HDLC
+Compiling source file ./prob3.sv
+Presto compilation completed successfully.
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+Error: Can't find design 'gray_adder'. (UID-109)
+Error: Current design is not defined. (UID-4)
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/gtech.db'
+Loading db file '/pkgs/synopsys/2020/design_compiler/syn/Q-2019.12-SP3/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (gray_adder)
+Elaborated 1 design.
+Current design is now 'gray_adder'.
+Information: Building the design 'gray2bin' instantiated from design 'gray_adder' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully. (gray2bin_N4)
+Information: Building the design 'CLA_adder' instantiated from design 'gray_adder' with
+	the parameters "4". (HDL-193)
+Presto compilation completed successfully. (CLA_adder_nBITS4)
+Information: Building the design 'bin2gray' instantiated from design 'gray_adder' with
+	the parameters "5". (HDL-193)
+Presto compilation completed successfully. (bin2gray_N5)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.3 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bin2gray_N5'
+  Processing 'CLA_adder_nBITS4'
+  Processing 'gray2bin_N4_0'
+  Processing 'gray_adder'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'gray_adder' has no optimization constraints set. (OPT-108)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'gray2bin_N4_1'
+  Mapping 'gray2bin_N4_1'
+  Structuring 'bin2gray_N5'
+  Mapping 'bin2gray_N5'
+  Structuring 'CLA_adder_nBITS4'
+  Mapping 'CLA_adder_nBITS4'
+  Structuring 'gray2bin_N4_0'
+  Mapping 'gray2bin_N4_0'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+    0:00:15   11088.0      0.00       0.0       0.0                          
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+ 
+****************************************
+Report : area
+Design : gray_adder
+Version: Q-2019.12-SP3
+Date   : Sun Nov 28 19:40:03 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    osu05_stdcells (File: /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db)
+
+Number of ports:                           53
+Number of nets:                            75
+Number of cells:                           31
+Number of combinational cells:             26
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                       4
+
+Combinational area:              11088.000000
+Buf/Inv area:                      576.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 11088.000000
+Total area:                 undefined
+ 
+****************************************
+Report : cell
+Design : gray_adder
+Version: Q-2019.12-SP3
+Date   : Sun Nov 28 19:40:03 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+adder                     CLA_adder_nBITS4                6048.000000
+                                                                    h, p
+b2g                       bin2gray_N5                     2016.000000
+                                                                    h, p
+g2b_A                     gray2bin_N4_0                   1512.000000
+                                                                    h, p
+g2b_B                     gray2bin_N4_1                   1512.000000
+                                                                    h, p
+--------------------------------------------------------------------------------
+Total 4 cells                                             11088.000000
+Loading db file '/home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : gray_adder
+Version: Q-2019.12-SP3
+Date   : Sun Nov 28 19:40:04 2021
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   9.3206 mW   (55%)
+  Net Switching Power  =   7.5361 mW   (45%)
+                         ---------
+Total Dynamic Power    =  16.8567 mW  (100%)
+
+Cell Leakage Power     =   3.7357 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      9.3206            7.5361            3.7357           16.8567  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              9.3206 mW         7.5361 mW         3.7357 nW        16.8567 mW
+Writing verilog file '/home/cfaber/common/Documents/ECE581/ece581/proj3/prob3.netlist'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+
+  Linking design 'gray_adder'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3 designs)               /home/cfaber/common/Documents/ECE581/ece581/proj3/gray_adder.db, etc
+  osu05_stdcells (library)    /home/cfaber/common/Documents/ECE581/ece581/proj3/osu05_stdcells.db
+  * (2 designs)               /home/cfaber/common/Documents/ECE581/ece581/proj3/CLA_adder_nBITS4.db, etc
+
+1

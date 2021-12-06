@@ -1,0 +1,74 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : Q-2019.12-SP3
+// Date      : Thu Nov 18 14:29:17 2021
+/////////////////////////////////////////////////////////////
+
+
+module FSM_B ( in, rst, clk, out );
+  input in, rst, clk;
+  output out;
+  wire   n7, n51, n52, n53, n54, n55, n56, n57, n58, n59, n60, n61, n62, n63,
+         n64, n65, n66, n67, n68, n69, n70, n71, n72, n73, n74, n75, n76, n77,
+         n78, n79, n80, n81, n82, n83, n84, n85, n86, n87, n88, n89, n90;
+  wire   [6:0] cs;
+  wire   [6:0] ns;
+
+  DFFSR \cs_reg[0]  ( .D(ns[0]), .CLK(clk), .R(1'b1), .S(n7), .Q(cs[0]) );
+  DFFSR \cs_reg[6]  ( .D(ns[6]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[6]) );
+  DFFSR \cs_reg[4]  ( .D(ns[4]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[4]) );
+  DFFSR \cs_reg[3]  ( .D(ns[3]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[3]) );
+  DFFSR \cs_reg[1]  ( .D(ns[1]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[1]) );
+  DFFSR \cs_reg[5]  ( .D(ns[5]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[5]) );
+  DFFSR \cs_reg[2]  ( .D(ns[2]), .CLK(clk), .R(n7), .S(1'b1), .Q(cs[2]) );
+  OAI21X1 U61 ( .A(n51), .B(n52), .C(n53), .Y(ns[6]) );
+  MUX2X1 U62 ( .B(n54), .A(n55), .S(n56), .Y(n53) );
+  OAI22X1 U63 ( .A(n57), .B(n52), .C(n58), .D(n56), .Y(ns[5]) );
+  OAI21X1 U64 ( .A(n59), .B(n52), .C(n60), .Y(ns[4]) );
+  MUX2X1 U65 ( .B(n55), .A(n54), .S(n56), .Y(n60) );
+  OAI22X1 U66 ( .A(in), .B(n61), .C(n62), .D(n52), .Y(ns[3]) );
+  OAI21X1 U67 ( .A(n63), .B(n52), .C(n64), .Y(ns[2]) );
+  INVX1 U68 ( .A(n65), .Y(n64) );
+  MUX2X1 U69 ( .B(n66), .A(n67), .S(n56), .Y(n65) );
+  INVX1 U70 ( .A(in), .Y(n56) );
+  OAI22X1 U71 ( .A(in), .B(n68), .C(n69), .D(n52), .Y(ns[1]) );
+  NAND3X1 U72 ( .A(n61), .B(n58), .C(n70), .Y(n52) );
+  NOR2X1 U73 ( .A(n55), .B(n54), .Y(n70) );
+  INVX1 U74 ( .A(n71), .Y(n54) );
+  NAND3X1 U75 ( .A(cs[5]), .B(n72), .C(n73), .Y(n71) );
+  NOR2X1 U76 ( .A(cs[0]), .B(n74), .Y(n73) );
+  NAND2X1 U77 ( .A(n69), .B(n62), .Y(n74) );
+  INVX1 U78 ( .A(n75), .Y(n55) );
+  NAND3X1 U79 ( .A(n76), .B(n59), .C(cs[2]), .Y(n75) );
+  AND2X1 U80 ( .A(n68), .B(n67), .Y(n58) );
+  NAND3X1 U81 ( .A(n77), .B(n62), .C(cs[1]), .Y(n67) );
+  INVX1 U82 ( .A(n78), .Y(n61) );
+  OAI21X1 U83 ( .A(cs[2]), .B(n79), .C(n66), .Y(n78) );
+  NAND3X1 U84 ( .A(n72), .B(n80), .C(cs[0]), .Y(n66) );
+  MUX2X1 U85 ( .B(n76), .A(n81), .S(n59), .Y(n79) );
+  NOR2X1 U86 ( .A(n51), .B(n82), .Y(n81) );
+  NAND2X1 U87 ( .A(n80), .B(n83), .Y(n82) );
+  INVX1 U88 ( .A(n84), .Y(n76) );
+  NAND3X1 U89 ( .A(n83), .B(n51), .C(n80), .Y(n84) );
+  NAND3X1 U90 ( .A(n77), .B(n69), .C(cs[3]), .Y(n68) );
+  INVX1 U91 ( .A(n85), .Y(n77) );
+  NAND3X1 U92 ( .A(n83), .B(n57), .C(n72), .Y(n85) );
+  INVX1 U93 ( .A(n86), .Y(n72) );
+  INVX1 U94 ( .A(cs[0]), .Y(n83) );
+  OAI21X1 U95 ( .A(n87), .B(n88), .C(n89), .Y(ns[0]) );
+  OAI21X1 U96 ( .A(out), .B(n86), .C(cs[0]), .Y(n89) );
+  NAND3X1 U97 ( .A(n59), .B(n51), .C(n63), .Y(n86) );
+  INVX1 U98 ( .A(cs[4]), .Y(n59) );
+  NAND2X1 U99 ( .A(in), .B(n90), .Y(n88) );
+  XNOR2X1 U100 ( .A(n51), .B(cs[4]), .Y(n90) );
+  INVX1 U101 ( .A(cs[6]), .Y(n51) );
+  NAND2X1 U102 ( .A(n80), .B(n63), .Y(n87) );
+  INVX1 U103 ( .A(cs[2]), .Y(n63) );
+  INVX1 U104 ( .A(out), .Y(n80) );
+  NAND3X1 U105 ( .A(n62), .B(n57), .C(n69), .Y(out) );
+  INVX1 U106 ( .A(cs[1]), .Y(n69) );
+  INVX1 U107 ( .A(cs[5]), .Y(n57) );
+  INVX1 U108 ( .A(cs[3]), .Y(n62) );
+  INVX1 U109 ( .A(rst), .Y(n7) );
+endmodule
+
